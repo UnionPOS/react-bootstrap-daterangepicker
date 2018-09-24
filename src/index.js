@@ -15,7 +15,7 @@ export class DateRangePicker extends Component {
     // initialize
     this.$picker.daterangepicker(this.getOptionsFromProps());
     // attach event listeners
-    ['Show', 'Hide', 'ShowCalendar', 'HideCalendar', 'Apply', 'Cancel'].forEach(
+    ['Ready', 'Show', 'Hide', 'ShowCalendar', 'HideCalendar', 'Apply', 'Cancel'].forEach(
       event => {
         const lcase = event.toLowerCase();
         this.$picker.on(
